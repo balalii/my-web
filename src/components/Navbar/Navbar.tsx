@@ -18,12 +18,12 @@ export default function Navbar() {
     };
   }, [scrollTop]);
   return (
-    <header className={`container z-20 fixed border-gray-300   top-0 left-0 right-0   backdrop-blur-lg bg-opacity-0 ${!!isScrolled && 'bg-white/60 bg-opacity-80 border-black  border-b '} `}>
+    <header className={`container z-20 fixed border-gray-300   top-0 left-0 right-0    bg-opacity-0 ${!!isScrolled && 'bg-white/70 bg-opacity-90 border-black  border-b backdrop-blur-lg'} `}>
       <nav className="center-row-flex justify-between py-6  ">
         {/* logo */}
         <div>
           {/* <span className="font-[600] text-2xl tracking-tighter">Iqbal Ali</span> */}
-          <span className="font-[600] text-2xl tracking-tighter">Icon Web</span>
+          <span className="font-[600] text-2xl tracking-tighter">Iqbal Ali</span>
         </div>
         {/* logo end */}
         {/* List Menu */}
