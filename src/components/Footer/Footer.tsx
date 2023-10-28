@@ -11,11 +11,11 @@ export default function Footer() {
           <h6 className="font-[600] text-xl max-w-xs ">Build by the amazing community of fringe</h6>
           <div>
             <h6 className="font-[600] mt-3 md:mt-0 mb-0 md:mb-3 text-xl ">Email</h6>
-            <p className="hover:underline hover:cursor-pointer  mt-2  md:mt-0 ">ucupulalal@gmail.com</p>
+            <p className="underline hover:cursor-pointer  mt-2  md:mt-0 ">iqbalali2606@gmail.com</p>
           </div>
           <div>
-            <h6 className="font-[600] mt-3 md:mt-0 mb-0 md:mb-3 text-xl ">Social</h6>
-            <ul className="center-row-flex md:justify-between space-x-5 md:space-x-8  mt-2  md:mt-0 ">
+            <h6 className="font-[600] mt-3 md:mt-0 mb-0 md:mb-3 text-xl ">{`Social's`}</h6>
+            <ul className="center-row-flex md:justify-between space-x-5 lg:space-x-8  mt-2  md:mt-0 ">
               <li>
                 <Image src={'icon/instagram.svg'} width={45} height={45} alt="instagram" />
               </li>
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="py-10  container">
-        <p className="text-sm text-gray-600">© Copyrights 2020. All Rights Reserved</p>
+        <p className="text-sm text-gray-600">© Copyrights {new Date().getFullYear()}. All Rights Reserved</p>
       </div>
     </footer>
   );
