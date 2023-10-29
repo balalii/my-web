@@ -6,7 +6,7 @@ export default function CardHeader() {
       <ul className="flex flex-col md:flex-row justify-center  md:border-t border-black">
         <li className="group">
           <Link
-            href={''}
+            href={'#tech'}
             className="border-s md:border-s-0  border-e  border-t border-black p-5 -mb-8 md:-mb-0 lg:p-8 pb-14 md:pb-3 
           flex flex-row space-x-5  md:-mr-[1px] rounded-tl-[2rem] md:rounded-tl-[0px] rounded-tr-[2rem]"
           >
@@ -22,7 +22,7 @@ export default function CardHeader() {
         </li>
         <li className="group">
           <Link
-            href={''}
+            href={'#project'}
             className="border-e border-s border-t border-black p-5
            -mb-8 md:-mb-0 lg:p-8 pb-14 md:pb-3 flex flex-row space-x-5  rounded-tl-[2rem] rounded-tr-[2rem]"
           >
@@ -42,7 +42,7 @@ export default function CardHeader() {
         </li>
         <li className="group">
           <Link
-            href={''}
+            href={'#socials'}
             className=" border-s border-e md:border-e-0  border-t border-black p-5 
            lg:p-8 pb-6 md:pb-3 flex flex-row space-x-5   md:-ml-[1px] rounded-tr-[2rem] md:rounded-tr-[0px] rounded-tl-[2rem] "
           >

@@ -5,17 +5,17 @@ import SOCIAL_LIST from '@/data/SOCIAL_LIST';
 
 export default function Socials() {
   return (
-    <section className="container">
+    <section className="container" id="socials">
       <div className="md:px-10 lg:px-20">
         <h2
-          className="text-[2.3rem] md:text-[3rem] md:pl-0 font-[600] 
+          className="text-[2rem] md:text-[3rem] md:pl-0 font-[500] 
               leading-tight tracking-tight mt-10 lg:max-w-3xl  "
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h2>
         <p className="text-gray-700 max-w-sm mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit amet consectetur elit.</p>
       </div>
-      <div className="mt-20">
+      <div className="mt-16 md:mt-20">
         <ul className="flex flex-col md:flex-row justify-center">
           {SOCIAL_LIST.map((data) => (
             <li key={data.name} className="group" title={`Visit to my ` + data.name}>

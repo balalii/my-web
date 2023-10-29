@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer className="bg-white flex flex-col ">
       <div className="container center-col-flex justify-between py-10 pb-5 md:pb-10">
-        <div>
+        {/* <div>
           <span className="font-[600] text-2xl tracking-tighter">Iqbal Ali</span>
-        </div>
+        </div> */}
         <div className="flex flex-col md:flex-row justify-between  space-y-6 md:space-y-0 mt-5  md:mt-10">
           <h6 className="font-[600] text-xl max-w-xs ">Build by the amazing community of fringe</h6>
           <div>

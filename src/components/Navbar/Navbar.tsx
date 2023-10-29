@@ -22,7 +22,7 @@ export default function Navbar() {
       className={` z-20 fixed border-gray-300   top-0 left-0 right-0 
      bg-opacity-0 ${!!isScrolled && 'bg-white/70 bg-opacity-90 border-black  border-b backdrop-blur-lg'} `}
     >
-      <nav className="container center-row-flex justify-between py-6  ">
+      <nav className="container center-row-flex justify-between py-5  ">
         {/* logo */}
         <div>
           {/* <span className="font-[600] text-2xl tracking-tighter">Iqbal Ali</span> */}
@@ -31,7 +31,7 @@ export default function Navbar() {
         {/* logo end */}
         {/* List Menu */}
         <div className="hidden md:block">
-          <ul className="center-row-flex space-x-10 font-[600] text-base ">
+          <ul className="center-row-flex space-x-10 font-[500] text-base ">
             <li>
               <Link href={''} className="hover:underline inline-flex items-center">
                 Instagram
@@ -42,7 +42,7 @@ export default function Navbar() {
                 Github
               </Link>
             </li>
-            <li>
+            <li className=" font-[600]">
               <Link href={''} className="hover:underline inline-flex items-center">
                 LinkIn
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
