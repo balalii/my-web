@@ -13,7 +13,7 @@ export default function Home() {
             border-e border-black  md:px-10 lg:px-20"
             >
               <h1
-                className="text-[2.6rem] md:text-[3.5rem] pl-5 md:pl-0 font-[600] max-w-xs md:max-w-md
+                className="text-[2.3rem] md:text-[3.5rem] pl-5 md:pl-0 font-[600] max-w-xs md:max-w-md
               leading-tight tracking-tight mt-10  "
               >
                 The best ideas {`don't`} wait
@@ -28,6 +28,7 @@ export default function Home() {
       </section>
       <Tech />
       <Socials />
+      <section></section>
     </>
   );
 }

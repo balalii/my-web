@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import SOCIAL_LIST from './../../data/SOCIAL_LIST';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -16,15 +18,13 @@ export default function Footer() {
           <div>
             <h6 className="font-[600] mt-3 md:mt-0 mb-0 md:mb-3 text-xl ">{`Social's`}</h6>
             <ul className="center-row-flex md:justify-between space-x-5 lg:space-x-8  mt-2  md:mt-0 ">
-              <li>
-                <Image src={'icon/instagram.svg'} width={45} height={45} alt="instagram" />
-              </li>
-              <li>
-                <Image src={'icon/github.svg'} width={30} height={30} alt="github" />
-              </li>
-              <li>
-                <Image src={'icon/linkedin.svg'} width={35} height={35} alt="linkedin" />
-              </li>
+              {SOCIAL_LIST.map((data) => (
+                <li key={data.name}>
+                  <Link href={data.link} target="_blank">
+                    <Image src={data.icon} width={30} height={30} alt="instagram" />
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
