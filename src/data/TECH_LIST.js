@@ -8,7 +8,7 @@ const TECH_LIST = [
     img: '/tech/next.png',
   },
   {
-    name: 'tailwind Js',
+    name: 'Tailwind ',
     img: '/tech/tailwind.png',
   },
   {
@@ -16,11 +16,11 @@ const TECH_LIST = [
     img: '/tech/react.png',
   },
   {
-    name: 'react-query',
+    name: 'React Query',
     img: '/tech/react-query.png',
   },
   {
-    name: 'framer-motion Js',
+    name: 'Framer Motion',
     img: '/tech/framer-motion.png',
   },
 ];

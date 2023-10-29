@@ -20,7 +20,10 @@ export default function Socials() {
           {SOCIAL_LIST.map((data) => (
             <li key={data.name} className="group" title={`Visit to my ` + data.name}>
               <Link href={data.link}>
-                <div className="rounded-3xl flex flex-row p-6 lg:p-8 border border-black group-hover:bg-lime-300/90 transition-all">
+                <div
+                  className="rounded-3xl flex flex-row p-6 lg:p-8 border border-black 
+                group-hover:bg-lime-300/90 transition-all"
+                >
                   {/* icon */}
                   <div className="pr-2 lg:pr-4 md:hidden lg:block">
                     <Image src={data.icon} alt={data.name} width={50} height={50} />
@@ -28,7 +31,12 @@ export default function Socials() {
                   {/* text */}
                   <div className="pl-3">
                     <h3 className="font-[500] text-lg ">{data.name}</h3>
-                    <span className="text-sm text-gray-700 line-clamp-2 md:line-clamp-none lg:line-clamp-2 leading-snug pt-2 pb-4">{data.desc}</span>
+                    <span
+                      className="text-sm text-gray-700 line-clamp-2 md:line-clamp-none 
+                    lg:line-clamp-2 leading-snug pt-2 pb-4"
+                    >
+                      {data.desc}
+                    </span>
                     <span className="font-semibold inline-flex items-center  group-hover:underline">
                       Visit
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-1">
