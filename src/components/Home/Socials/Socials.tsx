@@ -20,7 +20,7 @@ export default function Socials() {
           {SOCIAL_LIST.map((data) => (
             <li key={data.name} className="group" title={`Visit to my ` + data.name}>
               <Link href={data.link}>
-                <div className="rounded-3xl flex flex-row p-6 lg:p-8 border border-black">
+                <div className="rounded-3xl flex flex-row p-6 lg:p-8 border border-black group-hover:bg-lime-300/90 transition-all">
                   {/* icon */}
                   <div className="pr-2 lg:pr-4 md:hidden lg:block">
                     <Image src={data.icon} alt={data.name} width={50} height={50} />
