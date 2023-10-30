@@ -28,11 +28,11 @@ export default function Navbar() {
         {/* logo */}
         <div className="inline-flex items-center md:block">
           {/* <span className="font-[600] text-2xl tracking-tighter">Iqbal Ali</span> */}
-          <Image src={'/me.JPG'} alt="me" width={400} height={400} className="block md:hidden rounded-full mr-3 w-12 h-auto border border-black" />
+          <Image src={'/me.JPG'} alt="me" width={50} height={50} className="block md:hidden rounded-full mr-3 w-12 h-auto border border-black" />
 
           <div className="flex flex-col items-start">
             <span className="font-[600] text-[1.2rem]  tracking-tighter">Iqbal Ali</span>
-            <span className="text-[0.8rem]  font-medium  text-gray-700">Frontend Developer</span>
+            <span className="text-[0.8rem]  font-medium -mt-[0.19rem] text-gray-700">Frontend Developer</span>
           </div>
         </div>
         {/* logo end */}

@@ -35,7 +35,7 @@ export default function CardHeader() {
               />
             </svg>
             <div>
-              <h3 className="font-[500] text-lg md:text-xl group-hover:underline">Project</h3>
+              <h3 className="font-[500] text-lg md:text-xl group-hover:underline">Last Project</h3>
               <p className="text-sm text-gray-700 mt-2 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing adipisicing elit.</p>
             </div>
           </Link>
