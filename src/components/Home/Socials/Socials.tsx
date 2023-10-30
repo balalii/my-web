@@ -22,7 +22,7 @@ export default function Socials() {
               <Link href={data.link}>
                 <div
                   className="rounded-3xl flex flex-row p-6 lg:p-8 border border-black 
-                group-hover:bg-lime-300/90 transition-all"
+                group-hover:bg-[#EADBC8] transition-all"
                 >
                   {/* icon */}
                   <div className="pr-2 lg:pr-4 md:hidden lg:block">
@@ -30,7 +30,7 @@ export default function Socials() {
                   </div>
                   {/* text */}
                   <div className="pl-3">
-                    <h3 className="font-[500] text-lg ">{data.name}</h3>
+                    <h3 className="font-[500]  text-lg ">{data.name}</h3>
                     <span
                       className="text-sm text-gray-700 line-clamp-2 md:line-clamp-none 
                     lg:line-clamp-2 leading-snug pt-2 pb-4"

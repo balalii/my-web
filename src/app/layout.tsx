@@ -14,9 +14,9 @@ import Footer from '@/components/Footer/Footer';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className=" font-montserrat bg-[#FAF8ED]">
+      <body className=" font-montserrat bg-[#F8F0E5]">
         <Navbar />
-        <main className="min-h-screen pt-[4.5rem]  space-y-36 md:space-y-40">{children}</main>
+        <main className="min-h-screen pt-[4.5rem] md:pt-[5rem]   space-y-36 md:space-y-40">{children}</main>
         <Footer />
       </body>
     </html>

@@ -6,13 +6,13 @@ const SOCIAL_LIST = [
     icon: '/icon/instagram.svg',
   },
   {
-    name: 'github',
+    name: 'Github',
     link: '/',
     desc: 'Kunjungi social media saya untuk melihat informasi tentang saya',
     icon: '/icon/github.svg',
   },
   {
-    name: 'linkedin',
+    name: 'Linkedin',
     link: '/',
     desc: 'Kunjungi social media saya untuk melihat informasi tentang saya',
     icon: '/icon/linkedin.svg',

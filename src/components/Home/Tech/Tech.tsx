@@ -4,7 +4,7 @@ import TECH_LIST from './../../../data/TECH_LIST';
 
 export default function Tech() {
   return (
-    <section className="container" id="tech">
+    <section className="container lg:min-h-[60vh] lg:max-h-[60vh] flex flex-col items-center justify-center" id="tech">
       <h2 className="text-4xl md:text-3xl md:text-[2.5rem] font-[500] text-center">
         <span className="hidden md:inline-flex">My</span> Tech Frontend
       </h2>

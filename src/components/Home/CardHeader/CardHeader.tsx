@@ -15,7 +15,7 @@ export default function CardHeader() {
             </svg>
 
             <div>
-              <h3 className="font-[500] text-xl group-hover:underline">Tech Stack</h3>
+              <h3 className="font-[500] text-lg md:text-xl group-hover:underline">Tech Stack</h3>
               <p className="text-sm text-gray-700 mt-2 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </Link>
@@ -26,7 +26,7 @@ export default function CardHeader() {
             className="border-e border-s border-t border-black p-5
            -mb-8 md:-mb-0 lg:p-8 pb-14 md:pb-3 flex flex-row space-x-5  rounded-tl-[2rem] rounded-tr-[2rem]"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-16 h-16 -mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-20 h-20 -mt-6">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -35,7 +35,7 @@ export default function CardHeader() {
               />
             </svg>
             <div>
-              <h3 className="font-[500] text-xl group-hover:underline">Project</h3>
+              <h3 className="font-[500] text-lg md:text-xl group-hover:underline">Project</h3>
               <p className="text-sm text-gray-700 mt-2 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing adipisicing elit.</p>
             </div>
           </Link>
@@ -51,7 +51,7 @@ export default function CardHeader() {
             </svg>
 
             <div>
-              <h3 className="font-[500] text-xl group-hover:underline">{`Social's`} </h3>
+              <h3 className="font-[500] text-lg md:text-xl group-hover:underline">{`Social's`} </h3>
               <p className="text-sm text-gray-700 mt-2 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </Link>
