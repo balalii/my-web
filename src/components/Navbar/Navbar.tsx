@@ -32,7 +32,7 @@ export default function Navbar() {
 
           <div className="flex flex-col items-start">
             <span className="font-[600] text-[1.2rem]  tracking-tighter">Iqbal Ali</span>
-            <span className="text-[0.8rem] -mt-1  text-gray-600">Frontend Developer</span>
+            <span className="text-[0.8rem]  font-medium  text-gray-700">Frontend Developer</span>
           </div>
         </div>
         {/* logo end */}

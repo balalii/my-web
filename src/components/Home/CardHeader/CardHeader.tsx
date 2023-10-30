@@ -7,7 +7,7 @@ export default function CardHeader() {
         <li className="group">
           <Link
             href={'#tech'}
-            className="border-s md:border-s-0  border-e  border-t border-black p-5 -mb-8 md:-mb-0 lg:p-8 pb-14 md:pb-3 
+            className="border-s md:border-s-0  border-e  border-t border-black p-5 -mb-8 md:-mb-0 lg:p-8 lg:pb-5 pb-14 md:pb-3 
           flex flex-row space-x-5  md:-mr-[1px] rounded-tl-[2rem] md:rounded-tl-[0px] rounded-tr-[2rem]"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 -mt-4">
@@ -24,7 +24,7 @@ export default function CardHeader() {
           <Link
             href={'#project'}
             className="border-e border-s border-t border-black p-5
-           -mb-8 md:-mb-0 lg:p-8 pb-14 md:pb-3 flex flex-row space-x-5  rounded-tl-[2rem] rounded-tr-[2rem]"
+           -mb-8 md:-mb-0 lg:p-8 lg:pb-5 pb-14 md:pb-3 flex flex-row space-x-5  rounded-tl-[2rem] rounded-tr-[2rem]"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-20 h-20 -mt-6">
               <path
@@ -44,7 +44,7 @@ export default function CardHeader() {
           <Link
             href={'#socials'}
             className=" border-s border-e md:border-e-0  border-t border-black p-5 
-           lg:p-8 pb-6 md:pb-3 flex flex-row space-x-5   md:-ml-[1px] rounded-tr-[2rem] md:rounded-tr-[0px] rounded-tl-[2rem] "
+           lg:p-8 lg:pb-5 pb-6 md:pb-3 flex flex-row space-x-5   md:-ml-[1px] rounded-tr-[2rem] md:rounded-tr-[0px] rounded-tl-[2rem] "
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-14 h-14 -mt-4">
               <path strokeLinecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />

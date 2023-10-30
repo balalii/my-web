@@ -2,19 +2,19 @@ const SOCIAL_LIST = [
   {
     name: 'Instagram',
     link: '/',
-    desc: 'Kunjungi social media saya untuk melihat informasi tentang saya',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit amet.',
     icon: '/icon/instagram.svg',
   },
   {
     name: 'Github',
     link: '/',
-    desc: 'Kunjungi social media saya untuk melihat informasi tentang saya',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit amet.',
     icon: '/icon/github.svg',
   },
   {
     name: 'Linkedin',
     link: '/',
-    desc: 'Kunjungi social media saya untuk melihat informasi tentang saya',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit amet.',
     icon: '/icon/linkedin.svg',
   },
 ];

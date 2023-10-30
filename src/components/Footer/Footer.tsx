@@ -10,7 +10,7 @@ export default function Footer() {
           <span className="font-[600] text-2xl tracking-tighter">Iqbal Ali</span>
         </div> */}
         <div className="flex flex-col md:flex-row justify-between  space-y-6 md:space-y-0 mt-5  md:mt-10">
-          <h6 className="font-[600] text-xl max-w-xs ">Build by the amazing community of fringe</h6>
+          <h6 className="font-[600] text-xl max-w-xs ">Lorem ipsum dolor sit, amet consectetur adipisicing elit </h6>
           <div>
             <h6 className="font-[600] mt-3 md:mt-0 mb-0 md:mb-3 text-xl ">Email</h6>
             <p className="underline hover:cursor-pointer  mt-2  md:mt-0 ">iqbalali2606@gmail.com</p>
