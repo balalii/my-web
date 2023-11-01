@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className=" font-montserrat bg-[#F8F0E5]">
-        <Navbar />
+        {/* <Navbar /> */}
         <main className="min-h-screen pt-[4.5rem] md:pt-[5rem]   space-y-36 md:space-y-40">{children}</main>
         <Footer />
       </body>
