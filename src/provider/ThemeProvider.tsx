@@ -13,7 +13,7 @@ export default function ThemeProvider({ children, className }: { children: React
   }, [setTheTheme, theTheme]);
 
   return (
-    <body data-theme={theTheme} className="bg-[var(--background-color)]">
+    <body data-theme={theTheme} className="bg-[var(--background-color)] text-[var(--primary-color)]">
       <div className={className}>{children}</div>
     </body>
   );

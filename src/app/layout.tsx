@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <ThemeProvider className=" font-montserrat flex flex-col-reverse lg:flex-row justify-between container  bg-[var(--background-color)]">
-        <main className="flex-1  ">
+      <ThemeProvider className="  container  bg-[var(--background-color)]">
+        <main className="flex-1 font-montserrat flex flex-col-reverse lg:flex-row justify-between p-4">
           <Aside />
           <div className="ml-auto w-[885px] ">{children}</div>
         </main>

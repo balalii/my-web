@@ -17,7 +17,7 @@ export default function ThemeBtn() {
       <span className="relative">
         <input id="Toggle1" type="checkbox" className="hidden peer" checked={theTheme !== 'light'} onChange={toggleTheme} />
         <div className="w-[280px] h-[130px] rounded-full shadow-inner bg-[var(--primary-color)]"></div>
-        <div className={`absolute inset-y-0 left-0  w-[100px] h-[100px] m-[15px] rounded-full shadow bg-[var(--background-color)] peer-checked:right-0 peer-checked:left-auto`}></div>
+        <div className={`absolute inset-y-0 left-0  w-[90px] h-[90px] m-[20px] rounded-full shadow bg-[var(--background-color)] peer-checked:right-0 peer-checked:left-auto`}></div>
       </span>
     </label>
   );
