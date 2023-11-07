@@ -6,17 +6,18 @@ const config: Config = {
     extend: {
       fontFamily: {
         montserrat: ['Noto Sans', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto Condensed', 'sans-serif'],
       },
     },
     container: {
       center: true,
+
       padding: {
         DEFAULT: '1rem',
         sm: '1.5rem',
-        lg: '3.5rem',
-        xl: '4.5rem',
-        '2xl': '6.5rem',
+        lg: '0.5rem',
+        xl: '1rem',
+        '2xl': '1rem',
       },
     },
   },
