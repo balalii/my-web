@@ -15,7 +15,7 @@ export default function ThemeBtn() {
   return (
     <label
       className="inline-flex relative z-10  items-center space-x-4 cursor-pointer text-[var(--primary-color)]
-     -top-[112px] left-[1.4rem]
+     -top-[112px] left-[2rem]
       md:-top-[253px] md:left-[3rem]
       lg:-top-[313px] lg:left-[2rem]
       
