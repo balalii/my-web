@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Aside from '@/components/Aside/Aside';
+import ThemeProvider from '@/provider/ThemeProvider';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme={'lighr'}>
-      <body className=" font-montserrat flex flex-col-reverse lg:flex-row justify-between container  bg-[var(--background-color)]">
+    <html lang="en">
+      <ThemeProvider className=" font-montserrat flex flex-col-reverse lg:flex-row justify-between container  bg-[var(--background-color)]">
         <main className="flex-1  ">
           <Aside />
           <div className="ml-auto w-[885px] ">{children}</div>
         </main>
-      </body>
+      </ThemeProvider>
     </html>
   );
 }

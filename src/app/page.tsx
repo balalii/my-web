@@ -1,20 +1,9 @@
+import Header from '@/components/Home/Header/Header';
+
 export default function Home() {
   return (
     <>
-      <div className="  text-[var(--primary-color)] ">
-        <h1 className="text-rigth text-[190px] leading-[164px] font-[500] flex flex-col items-start">
-          <span className="tracking-[2px]">PORTFOLIO </span>
-          <span className="self-end tracking-[-8.44px] ">FRONT</span>
-          <span className="tracking-[-3px]">{'END DEV</>'}</span>
-        </h1>
-        <label className="inline-flex relative z-10 -top-[310px] left-[3rem]  items-center space-x-4 cursor-pointer text-[var(--primary-color)]">
-          <span className="relative">
-            <input id="Toggle1" type="checkbox" className="hidden peer" />
-            <div className="w-[280px] h-[130px] rounded-full shadow-inner bg-[var(--primary-color)] "></div>
-            <div className="absolute inset-y-0 left-0 w-[100px] h-[100px] m-[15px] rounded-full shadow peer-checked:right-0 peer-checked:left-auto bg-[var(--background-color)]"></div>
-          </span>
-        </label>
-      </div>
+      <Header />
       <p className="text-[var(--primary-color)]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dignissimos, corporis culpa inventore quia similique ducimus ex repellendus nulla id quas harum odio repellat doloribus unde non modi dolorum maiores a eius deleniti?
         Maxime fuga vel aliquam ab, eos velit cum accusamus tempore enim! Beatae commodi eius autem molestiae eum placeat facere, dolore quis quaerat, voluptatum, tenetur itaque! Quia veniam mollitia soluta accusantium, laboriosam eum sed
