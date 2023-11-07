@@ -8,7 +8,7 @@ export default function Profile() {
         Praesentium fugiat incidunt assumenda, asperiores rerum nesciunt dolorem sit amet dolore saepe, ex consectetur.
       </p>
       <div className="flex flex-col justify-between pt-4">
-        <div className="bg-[url(/me.png)]  h-[16rem] w-56 bg-gray-300/80  bg-cover bg-no-repeat bg-center grayscale hover:grayscale-0 transition-all cursor-pointer hover:bg-blue-950" />
+        <div className="bg-[url(/me.png)]  h-[17rem] w-56 bg-gray-300/80  bg-cover bg-no-repeat bg-center grayscale hover:grayscale-0 transition-all cursor-pointer hover:bg-blue-950" />
         <span className="text-right right-0 font-bold font-roboto mt-8 md:mt-0 text-[40px] md:text-[70px] uppercase">Iqbal Ali</span>
       </div>
       <p>

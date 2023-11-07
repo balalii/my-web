@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <ThemeProvider className="  container  bg-[var(--background-color)]">
-        <main className="flex-1 font-montserrat flex flex-col-reverse lg:flex-row justify-between p-4">
+        <main className="flex-1 font-montserrat flex flex-col-reverse lg:flex-row justify-between pt-8 lg:p-4">
           <Aside />
           <div className="ml-auto w-full lg:w-[885px] ">{children}</div>
         </main>
