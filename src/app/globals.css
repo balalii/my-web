@@ -14,7 +14,8 @@
 
 /* =================== theme app =====================*/
 :root {
-    --primary-color: #000000; 
+  --primary-color: #191919;
+    --secondary-color: #1D24CA;
     --background-color: #F1F0EF;
     --gray: #bbbbbb; 
     
@@ -24,7 +25,8 @@
   /* dark */
   [data-theme="dark"] {
     --primary-color: #F1F0EF; 
-    --background-color: #000000;  
+    --secondary-color: #F2DEA8;
+      --background-color: #021526;
     --gray: rgb(26, 26, 26); 
   }
   

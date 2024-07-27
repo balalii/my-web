@@ -19,17 +19,22 @@ export default function Header() {
       "
       >
         <motion.span
-          initial={animateHeader.initial} animate={  { opacity:1, y:1, transition: { delay: 0.1 } } }
+          initial={animateHeader.initial}
+          animate={{ opacity: 1, y: 1, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.1 } }}
           className="tracking-[3px] 
-        md:tracking-[4px] lg:tracking-[2px]"
+        md:tracking-[4px] lg:tracking-[2px] text-[var(--secondary-color)]"
         >
           PORTFOLIO{' '}
         </motion.span>
-        <motion.span initial={animateHeader.initial}  animate= {{ opacity:1, y:1, transition: { delay: 0.2 } } } className="self-end lg:tracking-[0px] ">
+        <motion.span initial={animateHeader.initial} animate={{ opacity: 1, y: 1, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.2 } }} className="self-end lg:tracking-[0px] ">
           FRONT
         </motion.span>
-        <motion.span initial={animateHeader.initial}  animate= {{ opacity:1, y:1, transition: { delay: 0.3 } } } className="tracking-[1px] 
-        lg:tracking-[-3px]">
+        <motion.span
+          initial={animateHeader.initial}
+          animate={{ opacity: 1, y: 1, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.3 } }}
+          className="tracking-[1px]  
+        lg:tracking-[-3px]"
+        >
           {'END DEV</>'}
         </motion.span>
       </motion.h1>

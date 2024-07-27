@@ -20,9 +20,9 @@ export default function ThemeBtn() {
   useEffect(() => {
     const enterAnimation = async () => {
       if (theTheme === 'light') {
-        await animate('.btnTheme', { right: 0, left: 'auto', rotate: 360 }, { type: 'spring', duration: 1 });
+        await animate('.btnTheme', { right: 0, left: 'auto', }, { type: 'spring', duration: 1 });
       } else {
-        await animate('.btnTheme', { right: 0, left: 0, rotate: 0 }, { type: 'spring', duration: 1 });     
+        await animate('.btnTheme', { right: 0, left: 0, }, { type: 'spring', duration: 1 });     
       }
     };
     enterAnimation();
@@ -31,7 +31,7 @@ export default function ThemeBtn() {
   return (
     <motion.label
       initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: [0.9, 1.1, 1], transition: { delay: 0.2, duration: 0.4 } }}
+      animate={{ opacity: 1, scale: [0.9, 1.1, 1], transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.2, duration: 0.4 } }}
       ref={scope}
       className="inline-flex relative z-10  items-center space-x-4 cursor-pointer text-[var(--primary-color)]
      -top-[119px] left-[2rem]
@@ -51,7 +51,6 @@ export default function ThemeBtn() {
         ></div>
         <motion.div
           initial={{ left: 0, rotate: 0 }}
-          animate={{ scale: [1, 1.1, 1], transition:{delay:0.4, duration:0.4}}}
           whileHover={{ scale: 1.07 }}
           whileTap={{ scale: 0.9 }}
           className={`btnTheme flex flex-col items-center justify-center text-8xl text-center
@@ -61,9 +60,13 @@ export default function ThemeBtn() {
           lg:w-[90px] lg:h-[90px] lg:m-[20px] 
           `}
         >
-          <motion.div initial={{ scale: 1 }} animate={{ scale: [0, 1.1, 1], transition: { delay: 0.4, duration:0.4 }  }} className="-mt-1 lg:-mt-2 
-          text-3xl md:text-7xl xl:text-8xl">
-            {theTheme === 'light' ? '🌚' : '🌞'}
+          <motion.div
+            initial={{ scale: 1 }}
+            animate={{ scale: [0, 1.1, 1], transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.4, duration: 0.4 } }}
+            className="-mt-1 lg:-mt-2 
+          text-3xl md:text-7xl xl:text-8xl"
+          >
+            {theTheme === 'dark' ? '🌚' : '🌞'}
           </motion.div>
         </motion.div>
       </span>
