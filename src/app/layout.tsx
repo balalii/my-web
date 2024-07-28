@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Aside from '@/components/Aside/Aside';
+import Aside from '@/components/elements/Aside/Aside';
 import ThemeProvider from '@/provider/ThemeProvider';
 
 // const inter = Inter({ subsets: ['latin'] })
