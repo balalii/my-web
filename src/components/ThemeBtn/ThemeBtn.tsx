@@ -34,7 +34,7 @@ export default function ThemeBtn() {
       animate={{ opacity: 1, scale: [0.9, 1.1, 1], transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.2, duration: 0.4 } }}
       ref={scope}
       className="inline-flex relative z-10  items-center space-x-4 cursor-pointer text-[var(--primary-color)]
-     -top-[119px] left-[2rem]
+     -top-[119px] left-[1.3rem]
       md:-top-[253px] md:left-[3rem]
       lg:-top-[313px] lg:left-[2rem]
       
@@ -44,7 +44,7 @@ export default function ThemeBtn() {
         <input id="Toggle1" type="checkbox" className="hidden peer" checked={theTheme !== 'light'} onChange={toggleTheme} />
         <div
           className="rounded-full shadow-inner bg-[var(--primary-color)]
-          w-[80px] h-[42px]
+          w-[85px] h-[47px]
           md:w-[200px] md:h-[100px]
           lg:w-[280px] lg:h-[130px]
           "
@@ -55,7 +55,7 @@ export default function ThemeBtn() {
           whileTap={{ scale: 0.9 }}
           className={`btnTheme flex flex-col items-center justify-center text-8xl text-center
           absolute inset-y-0 left-0  rounded-full  
-          w-[32px] h-[32px] m-[5px]
+          w-[37px] h-[37px] m-[5px]
           md:w-[70px] md:h-[70px] md:m-[15px] 
           lg:w-[90px] lg:h-[90px] lg:m-[20px] 
           `}
