@@ -21,9 +21,9 @@ export default function Project() {
       </motion.div>
 
       <div className="min-h-screen space-y-6">
-        <div className="border-t-2 border-[var(--secondary-color)]">
+        <div className="border-t border-[var(--secondary-color)]">
           {/* card1 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--secondary-color)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--secondary-color)]">
             <div className=" col-span-full md:col-span-3">
               <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
             </div>
@@ -41,7 +41,7 @@ export default function Project() {
           </div>
 
           {/* card 2 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--secondary-color)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--secondary-color)]">
             <div className=" col-span-full md:col-span-3">
               <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
             </div>
@@ -59,7 +59,7 @@ export default function Project() {
           </div>
 
           {/* card 3 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--secondary-color)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--secondary-color)]">
             <div className=" col-span-full md:col-span-3">
               <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
             </div>

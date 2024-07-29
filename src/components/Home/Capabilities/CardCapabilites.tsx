@@ -46,7 +46,7 @@ export default function CardCapabilities() {
             restDelta: 0.2,
           },
         }}
-        className="transition-all md:w-48 h-64 hover:cursor-pointer border-2 border-[var(--secondary-color)] p-3 flex flex-col space-y-5 items-center justify-center"
+        className="transition-all md:w-48 h-64 hover:cursor-pointer border border-[var(--secondary-color)] p-3 flex flex-col space-y-5 items-center justify-center"
       >
         <span className="self-start font-bold">01/</span>
         <Image src={'/tech/reactjs.png'} width={500} height={500} className={`w-24 md:!mt-10 ${theTheme === 'dark' && 'filter invert'}`} alt="Tech" />
