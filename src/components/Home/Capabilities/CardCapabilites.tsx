@@ -56,7 +56,7 @@ export default function CardCapabilities() {
         initial={{ opacity: 0, y: -190, rotate: 0 }}
         animate={isHovered ? (!isMobile ? { opacity: 1, y: -190, rotate: 10 } : { opacity: 1, y: -250, rotate: 0 }) : { opacity: 0, y: -190, rotate: 0 }}
         transition={{
-          duration: 0.3,
+          duration: 0.2,
           ease: [0.42, 0, 0.58, 1],
           rotate: {
             type: 'spring',
@@ -65,10 +65,10 @@ export default function CardCapabilities() {
             restDelta: 0.2,
           },
         }}
-        className={`group-hover:cursor-pointer transition-all bg-[var(--primary-color)] py-7 text-[var(--background-color)] flex flex-col justify-between md:w-48 h-64 p-3`}
+        className={`group-hover:cursor-pointer transition-all bg-[var(--primary-color)] py-7 text-[var(--background-color)] flex flex-col justify-between md:w-48 h-64 p-5 md:p-3`}
       >
         <h3 className="uppercase font-bold font-sans text-xl">REACT JS</h3>
-        <p className="text-sm md:text-xs font-sans">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perferendis, ab et iste incidunt a quis exercitationem rerum deserunt sint debitis quia repellendus.</p>
+        <p className="text-base md:text-xs font-sans">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perferendis, ab et iste incidunt a quis exercitationem rerum deserunt sint debitis quia repellendus.</p>
       </motion.div>
     </motion.div>
   );
