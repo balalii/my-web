@@ -4,26 +4,26 @@ import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
 
-export default function CardProject() {
+export default function Project() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
     <section className="space-y-10">
       <motion.div ref={ref} className="uppercase text-[4rem] md:text-[10rem] font-semibold md:leading-[8rem]">
-        <motion.h2 initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.1 } } : {}}>
+        <motion.h2 initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.3 } } : {}}>
           Selected
         </motion.h2>{' '}
         <br />
-        <motion.h2 className="-mt-[8rem] md:-mt-[8rem]" initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.5 } } : {}}>
+        <motion.h2 className="-mt-[8rem] md:-mt-[8rem]" initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.7 } } : {}}>
           projects
         </motion.h2>
       </motion.div>
 
       <div className="min-h-screen space-y-6">
-        <div className="border-t-2 border-[var(--gray)]">
+        <div className="border-t-2 border-[var(--secondary-color)]">
           {/* card1 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--gray)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--secondary-color)]">
             <div className=" col-span-full md:col-span-3">
               <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
             </div>
@@ -41,7 +41,7 @@ export default function CardProject() {
           </div>
 
           {/* card 2 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--gray)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--secondary-color)]">
             <div className=" col-span-full md:col-span-3">
               <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
             </div>
@@ -59,7 +59,7 @@ export default function CardProject() {
           </div>
 
           {/* card 3 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--gray)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b-2 border-[var(--secondary-color)]">
             <div className=" col-span-full md:col-span-3">
               <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
             </div>
