@@ -14,10 +14,10 @@
 
 /* =================== theme app =====================*/
 :root {
-  --primary-color: #191919;
-    --secondary-color: #1D24CA;
-    --background-color: #F1F0EF;
-    --gray: #bbbbbb; 
+  --primary-color: #252525;
+    --secondary-color: #002E94;
+    --background-color: #fff1dd;
+    --gray: #929292c4;
     
     
   }
@@ -27,7 +27,7 @@
     --primary-color: #F1F0EF; 
     --secondary-color: #F2DEA8;
       --background-color: #021526;
-    --gray: rgb(26, 26, 26); 
+    --gray: #bbbbbb;
   }
   
 h1, h2, h3, h4, h5, h6{

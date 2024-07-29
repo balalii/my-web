@@ -10,11 +10,11 @@ export default function Header() {
   return (
     <div className="  text-[var(--primary-color)] ">
       <motion.h1
-        className="text-rigth font-[600] flex flex-col items-start max-w-full 
+        className="text-rigth font-[700] flex flex-col items-start max-w-full 
       md:max-w-[43rem]  lg:max-w-none lg:mx-0
-      text-[66px] leading-[65px]
-      md:text-[140px] md:leading-[134px] 
-      lg:text-[190px] lg:leading-[164px] 
+      text-[63px] leading-[65px]
+      md:text-[130px] md:leading-[134px] 
+      lg:text-[180px] lg:leading-[164px] 
       
       "
       >
@@ -26,7 +26,7 @@ export default function Header() {
         >
           PORTFOLIO{' '}
         </motion.span>
-        <motion.span initial={animateHeader.initial} animate={{ opacity: 1, y: 1, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.2 } }} className="self-end lg:tracking-[0px] pr-8 md:pr-0">
+        <motion.span initial={animateHeader.initial} animate={{ opacity: 1, y: 1, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.2 } }} className="self-start md:self-end lg:tracking-[0px] ml-[135px] md:ml-0 md:mr-10">
           FRONT
         </motion.span>
         <motion.span
@@ -35,7 +35,7 @@ export default function Header() {
           className="tracking-[1px]  
         lg:tracking-[-3px]"
         >
-          {'END DEV</>'}
+          {'END DEV </>'}
         </motion.span>
       </motion.h1>
       <ThemeBtn />

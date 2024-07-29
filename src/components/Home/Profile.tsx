@@ -4,12 +4,12 @@ import TextDescription from '../elements/TextDescription';
 export default function Profile() {
   return (
     <section className="space-y-5 md:space-y-5 !mt-0">
-      <TextDescription className="indent-[40%]">
+      <TextDescription className="indent-20 md:indent-[40%]">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptatum, ea eos inventore aliquam culpa beatae iste laudantium minus deserunt sit tempora exercitationem nam vel laboriosam eum officia sunt necessitatibus at.
         Praesentium fugiat incidunt assumenda, asperiores rerum nesciunt dolorem sit amet dolore saepe, ex consectetur.
       </TextDescription>
       <div className="flex flex-col justify-between pt-4">
-        <div className="bg-[url(/me.png)] rounded-xl h-[17rem] w-56 bg-[#F1F0EF]  bg-cover bg-no-repeat bg-center grayscale hover:grayscale-0 transition-all cursor-pointer hover:bg-blue-950" />
+        <div className="bg-[url(/me.png)] rounded-xl h-[17rem] w-56 bg-transparent  bg-cover bg-no-repeat bg-center grayscale hover:grayscale-0 transition-all cursor-pointer hover:bg-blue-950" />
         <p className="text-right right-0 font-bold font-roboto  mt-8 md:mt-0 text-[50px] md:text-[70px] uppercase tracking-wider">
           <span className="text-[var(--secondary-color)]">Iqbal</span> Ali
         </p>
@@ -18,7 +18,7 @@ export default function Profile() {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptatum, ea eos inventore aliquam culpa beatae iste laudantium minus deserunt sit tempora exercitationem nam vel laboriosam eum officia sunt necessitatibus at.
         Praesentium fugiat incidunt assumenda, asperiores rerum nesciunt dolorem sit amet dolore saepe.
       </p> */}
-      <TextDescription className="indent-[40%]">
+      <TextDescription className="indent-20 md:indent-[40%]">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptatum, ea eos inventore aliquam culpa beatae iste laudantium minus deserunt sit tempora exercitationem nam vel laboriosam eum officia sunt necessitatibus at.
         Praesentium fugiat incidunt assumenda, asperiores rerum nesciunt dolorem sit amet dolore saepe.
       </TextDescription>
