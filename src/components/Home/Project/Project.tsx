@@ -36,7 +36,7 @@ export default function Project() {
             </div>
 
             <div className="order-2 md:order-3 col-span-full md:col-span-4 flex flex-row items-start justify-center md:ml-24">
-              <Image className="w-full md:h-64 object-cover " src={'/project/Deadpool.jpg'} width={1000} height={1000} alt="project" />
+              <Image className="w-full md:max-h-96 object-cover " src={'/project/1.png'} width={1000} height={1000} alt="project" />
             </div>
           </div>
 
@@ -54,7 +54,7 @@ export default function Project() {
             </div>
 
             <div className="order-2 md:order-3 col-span-full md:col-span-4 flex flex-row items-start justify-center md:ml-24">
-              <Image className="w-full md:h-64 object-cover " src={'/project/Deadpool.jpg'} width={1000} height={1000} alt="project" />
+              <Image className="w-full md:max-h-96 object-cover " src={'/project/Deadpool.jpg'} width={1000} height={1000} alt="project" />
             </div>
           </div>
 
@@ -72,7 +72,7 @@ export default function Project() {
             </div>
 
             <div className="order-2 md:order-3 col-span-full md:col-span-4 flex flex-row items-start justify-center md:ml-24">
-              <Image className="w-full md:h-64 object-cover " src={'/project/Deadpool.jpg'} width={1000} height={1000} alt="project" />
+              <Image className="w-full md:max-h-96 object-cover " src={'/project/me2.png'} width={1000} height={1000} alt="project" />
             </div>
           </div>
         </div>
