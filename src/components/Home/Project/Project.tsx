@@ -10,7 +10,7 @@ export default function Project() {
 
   return (
     <section className="space-y-10">
-      <motion.div ref={ref} className="uppercase text-[4rem] md:text-[10rem] font-semibold md:leading-[8rem]">
+      <motion.div ref={ref} className="uppercase text-[4rem] md:text-[10rem] font-bold md:leading-[8rem]">
         <motion.h2 initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.3 } } : {}}>
           Selected
         </motion.h2>{' '}
@@ -21,11 +21,11 @@ export default function Project() {
       </motion.div>
 
       <div className="min-h-screen space-y-6">
-        <div className="border-t border-[var(--secondary-color)]">
+        <div className="border-t border-[var(--primary-color)]">
           {/* card1 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--secondary-color)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--primary-color)]">
             <div className=" col-span-full md:col-span-3">
-              <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
+              <h3 className="font-medium text-4xl md:pr-10 font-montserrat leading-none">Geo Thermal complex</h3>
             </div>
 
             <div className="order-3 md:order-2 col-span-full md:col-span-2">
@@ -36,14 +36,14 @@ export default function Project() {
             </div>
 
             <div className="order-2 md:order-3 col-span-full md:col-span-4 flex flex-row items-start justify-center md:ml-24">
-              <Image className="w-full md:max-h-96 object-cover " src={'/project/1.png'} width={1000} height={1000} alt="project" />
+              <Image className="w-full md:max-h-[26rem] object-cover " src={'/project/1.png'} width={1000} height={1000} alt="project" />
             </div>
           </div>
 
           {/* card 2 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--secondary-color)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--primary-color)]">
             <div className=" col-span-full md:col-span-3">
-              <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
+              <h3 className="font-medium text-4xl md:pr-10 font-montserrat leading-none">Geo Thermal complex</h3>
             </div>
 
             <div className="order-3 md:order-2 col-span-full md:col-span-2">
@@ -54,14 +54,14 @@ export default function Project() {
             </div>
 
             <div className="order-2 md:order-3 col-span-full md:col-span-4 flex flex-row items-start justify-center md:ml-24">
-              <Image className="w-full md:max-h-96 object-cover " src={'/project/Deadpool.jpg'} width={1000} height={1000} alt="project" />
+              <Image className="w-full md:max-h-[26rem] object-cover " src={'/project/Deadpool.jpg'} width={1000} height={1000} alt="project" />
             </div>
           </div>
 
           {/* card 3 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--secondary-color)]">
+          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--primary-color)]">
             <div className=" col-span-full md:col-span-3">
-              <h3 className="font-medium text-4xl md:pr-10 font-montserrat">Geo Thermal complex</h3>
+              <h3 className="font-medium text-4xl md:pr-10 font-montserrat leading-none">Geo Thermal complex</h3>
             </div>
 
             <div className="order-3 md:order-2 col-span-full md:col-span-2">
@@ -72,7 +72,7 @@ export default function Project() {
             </div>
 
             <div className="order-2 md:order-3 col-span-full md:col-span-4 flex flex-row items-start justify-center md:ml-24">
-              <Image className="w-full md:max-h-96 object-cover " src={'/project/me2.png'} width={1000} height={1000} alt="project" />
+              <Image className="w-full md:max-h-[26rem] object-cover " src={'/project/me2.png'} width={1000} height={1000} alt="project" />
             </div>
           </div>
         </div>

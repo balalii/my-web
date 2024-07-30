@@ -4,13 +4,13 @@ export default function Aside() {
       <span className="text-xl font-semibold">Iqbal Ali </span>
       <nav>
         <ul className="space-y-3 -mt-20">
-          <li className="font-extrabold text-[var(--secondary-color)]">Home</li>
+          <li className="font-bold text-[var(--secondary-color)]">Home</li>
           <li>Project</li>
           <li>Contact</li>
         </ul>
       </nav>
       <p className="">
-        2022-<span className=" text-[var(--secondary-color)]">{new Date().getFullYear()}</span>
+        2022-<span className=" font-bold">{new Date().getFullYear()}</span>
       </p>
     </aside>
   );

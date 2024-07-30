@@ -10,8 +10,8 @@ export default function Profile() {
       </TextDescription>
       <div className="flex flex-col justify-between pt-4">
         <div className="bg-[url(/me.png)] rounded-xl h-[17rem] w-56 bg-transparent  bg-cover bg-no-repeat bg-center grayscale hover:grayscale-0 transition-all cursor-pointer hover:bg-blue-950" />
-        <p className="text-right right-0 font-bold font-roboto  mt-8 md:mt-0 text-[50px] md:text-[70px] uppercase tracking-wider">
-          <span className="text-[var(--secondary-color)]">Iqbal</span> Ali
+        <p className="text-right right-0  mt-8 md:mt-0 text-[50px] md:text-[70px] uppercase tracking-wider font-roboto font-extrabold">
+          <span className=" ">Iqbal</span> Ali
         </p>
       </div>
       {/* <p>

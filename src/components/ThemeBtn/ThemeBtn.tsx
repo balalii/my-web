@@ -35,8 +35,8 @@ export default function ThemeBtn() {
       ref={scope}
       className="inline-flex relative z-10  items-center space-x-4 cursor-pointer text-[var(--primary-color)]
      -top-[125px] left-[0.7rem]
-      md:-top-[253px] md:left-[3rem]
-      lg:-top-[313px] lg:left-[2rem]
+      md:-top-[240px] md:left-[3rem]
+      lg:-top-[300px] lg:left-[2rem]
       
       "
     >

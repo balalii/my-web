@@ -1,0 +1,41 @@
+'use client';
+import Button from '@/components/elements/Button';
+import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
+import { useRef } from 'react';
+import TextDescription from '../elements/TextDescription';
+
+export default function Footer() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <section className="space-y-10 mt-28 md:mt-38">
+      <motion.div ref={ref} className="uppercase text-[4rem] md:text-[10rem] font-bold md:leading-[8rem]">
+        <motion.h2 initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.3 } } : {}}>
+          Contact
+        </motion.h2>
+      </motion.div>
+
+      <TextDescription className="indent-20 md:indent-[40%]">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptatum, ea eos inventore aliquam culpa beatae iste laudantium minus deserunt sit tempora exercitationem nam vel laboriosam eum officia sunt necessitatibus at.
+        Praesentium fugiat incidunt assumenda, asperiores rerum nesciunt dolorem sit amet dolore saepe.
+      </TextDescription>
+
+      <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 md:space-x-10">
+        <h4 className="uppercase text-[3rem] md:text-[4rem] font-extrabold md:leading-[8rem] font-sans tracking-tighter">Drop me an</h4>
+        <div className="border-2 border-[var(--primary-color)] bg-[--primary-color]  pr-14 rounded-full">
+          <div className=" bg-[var(--background-color)] rounded-full p-8 pt-3 pb-5 ">
+            <span className="uppercase font-outline-2 text-[var(--background-color)] text-6xl font-extrabold font-sans">email</span>
+          </div>
+        </div>
+      </div>
+
+      <ul className="text-lg flex flex-row items-center justify-start space-x-10 md:space-x-20 text-[var(--primary-color)] font-medium pb-8">
+        <li>Instagram//</li>
+        <li>GitHub//</li>
+        <li>Linkind//</li>
+      </ul>
+    </section>
+  );
+}

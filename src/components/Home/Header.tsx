@@ -13,8 +13,8 @@ export default function Header() {
         className="text-rigth font-[700] flex flex-col items-start max-w-full 
       md:max-w-[43rem]  lg:max-w-none lg:mx-0
       text-[63px] leading-[65px]
-      md:text-[130px] md:leading-[134px] 
-      lg:text-[180px] lg:leading-[164px] 
+      md:text-[130px] md:leading-[124px] 
+      lg:text-[180px] lg:leading-[154px] 
       
       "
       >

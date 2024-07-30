@@ -65,13 +65,16 @@
   html {
     scroll-behavior: smooth;
   }
+.font-outline-2 {
+  -webkit-text-stroke: 2px var(--primary-color);
+}
 }
 
 /* =================== theme app =====================*/
 :root {
   --primary-color: #252525;
   --secondary-color: #002E94;
-    --background-color: #fff1dd;
+    --background-color: #F1F0EF;
     --gray: #929292c4;
   
   
