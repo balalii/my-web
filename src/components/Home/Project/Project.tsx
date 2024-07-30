@@ -20,7 +20,7 @@ export default function Project() {
         </motion.h2>
       </motion.div>
 
-      <div className="min-h-screen space-y-6">
+      <div className=" space-y-6">
         <div className="border-t border-[var(--primary-color)]">
           {/* card1 */}
           <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--primary-color)]">
@@ -57,8 +57,6 @@ export default function Project() {
               <Image className="w-full md:max-h-[26rem] object-cover " src={'/project/1.png'} width={1000} height={1000} alt="project" />
             </div>
           </div>
-
-
         </div>
         <div className="w-full flex justify-center items-center ">
           <Button>See All Projects</Button>

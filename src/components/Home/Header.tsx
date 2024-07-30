@@ -1,6 +1,6 @@
 'use client';
 import { Variants, motion, useAnimate } from 'framer-motion';
-import ThemeBtn from '@/components/ThemeBtn/ThemeBtn';
+import ThemeBtn from '@/components/elements/ThemeBtn/ThemeBtn';
 
 export default function Header() {
   const animateHeader = {

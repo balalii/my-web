@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Aside from '@/components/elements/Aside/Aside';
 import ThemeProvider from '@/provider/ThemeProvider';
-import Footer from '@/components/Footer/Footer';
+import { FooterLink } from '@/components/elements/Footer/Footer';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -18,8 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 font-montserrat flex flex-col-reverse lg:flex-row justify-between pt-8 lg:p-4">
           <Aside />
           <div className="ml-auto w-full lg:w-[885px] ">
-            {children}
-            <Footer />
+            <div className="min-h-screen">{children}</div>
+            <FooterLink />
           </div>
         </main>
       </ThemeProvider>
