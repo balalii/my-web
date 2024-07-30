@@ -45,7 +45,7 @@ export default function Footer() {
       <ul className="text-lg flex flex-row items-center justify-start space-x-10 md:space-x-20 text-[var(--primary-color)] font-medium pb-8">
         <li>Instagram//</li>
         <li>GitHub//</li>
-        <li>LinkedIn//</li>
+        <li>Linkedin//</li>
       </ul>
     </section>
   );

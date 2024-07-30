@@ -72,7 +72,7 @@
 
 /* =================== theme app =====================*/
 :root {
-  --primary-color: #252525;
+  --primary-color: #212121;
   --secondary-color: #002E94;
     --background-color: #F1F0EF;
     --gray: #929292c4;
@@ -84,7 +84,7 @@
   [data-theme="dark"] {
     --primary-color: #F1F0EF;
     --secondary-color: #F2DEA8;
-    --background-color: #021526;
+    --background-color: #212121;
     --gray: #bbbbbb;
   }
 h1,
