@@ -2,12 +2,17 @@
 import Button from '@/components/elements/Button';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import TextDescription from '../elements/TextDescription';
 
 export default function Footer() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
 
   return (
     <section className="space-y-10 mt-28 md:mt-38">
@@ -24,17 +29,23 @@ export default function Footer() {
 
       <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 md:space-x-10">
         <h4 className="uppercase text-[3rem] md:text-[4rem] font-extrabold md:leading-[8rem] font-sans tracking-tighter">Drop me an</h4>
-        <div className="border-2 border-[var(--primary-color)] bg-[--primary-color]  pr-14 rounded-full">
-          <div className=" bg-[var(--background-color)] rounded-full p-8 pt-3 pb-5 ">
+        <motion.div
+          initial={{ paddingRight: '3.5rem' }}
+          animate={{ paddingRight: isClicked ? '0rem' : '3.5rem', paddingLeft: isClicked ? '3.5rem' : '0rem' }}
+          transition={{ duration: 0.5 }}
+          className="border-2 border-[var(--primary-color)] bg-[--primary-color] rounded-full cursor-pointer"
+          onClick={handleClick}
+        >
+          <div className="bg-[var(--background-color)] rounded-full p-8 pt-3 pb-5">
             <span className="uppercase font-outline-2 text-[var(--background-color)] text-6xl font-extrabold font-sans">email</span>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <ul className="text-lg flex flex-row items-center justify-start space-x-10 md:space-x-20 text-[var(--primary-color)] font-medium pb-8">
         <li>Instagram//</li>
         <li>GitHub//</li>
-        <li>Linkind//</li>
+        <li>LinkedIn//</li>
       </ul>
     </section>
   );

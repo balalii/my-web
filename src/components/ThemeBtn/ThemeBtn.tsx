@@ -2,8 +2,9 @@
 
 import { useThemeStore } from '@/store/ThemeStore';
 import { motion, useAnimate } from 'framer-motion';
+import Image from 'next/image';
 import { useEffect } from 'react';
-  
+
 export default function ThemeBtn() {
   const theTheme = useThemeStore((state) => state.theTheme);
   const setTheTheme = useThemeStore((state) => state.setTheTheme);
@@ -20,9 +21,9 @@ export default function ThemeBtn() {
   useEffect(() => {
     const enterAnimation = async () => {
       if (theTheme === 'light') {
-        await animate('.btnTheme', { right: 0, left: 'auto', }, { type: 'spring', duration: 1 });
+        await animate('.btnTheme', { right: 0, left: 'auto' }, { type: 'spring', duration: 1 });
       } else {
-        await animate('.btnTheme', { right: 0, left: 0, }, { type: 'spring', duration: 1 });     
+        await animate('.btnTheme', { right: 0, left: 0 }, { type: 'spring', duration: 1 });
       }
     };
     enterAnimation();
@@ -66,7 +67,9 @@ export default function ThemeBtn() {
             className="-mt-1 lg:-mt-2 
           text-4xl md:text-7xl xl:text-8xl"
           >
-            {theTheme === 'dark' ? '🌚' : '🌞'}
+            <div className="md:mt-2">
+              {theTheme === 'dark' ? <Image width={500} height={500} alt="moon" src={'/assets/moon.png'} className="w-[70rem] h-full" /> : <Image width={500} height={500} alt="sun" src={'/assets/sun.png'} className="w-[70rem] h-full" />}
+            </div>
           </motion.div>
         </motion.div>
       </span>
