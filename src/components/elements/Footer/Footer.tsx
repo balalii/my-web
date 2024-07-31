@@ -16,8 +16,8 @@ export default function Footer() {
   };
 
   return (
-    <section className="space-y-10 mt-28 md:mt-38">
-      <motion.div ref={ref} className="uppercase text-[4rem] md:text-[10rem] font-bold md:leading-[8rem]">
+    <section ref={ref} className="space-y-10 mt-28 md:mt-38">
+      <motion.div className="uppercase text-[4rem] md:text-[10rem] font-bold md:leading-[8rem]">
         <motion.h2 initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.3 } } : { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.4 } }}>
           Contact
         </motion.h2>

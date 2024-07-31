@@ -3,6 +3,8 @@ import Button from '@/components/elements/Button';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
+import { DATA_PROJECT } from './DATA_PROJECT';
+import ProjectCard from './ProjectCard';
 
 export default function Project() {
   const ref = useRef(null);
@@ -23,40 +25,10 @@ export default function Project() {
       <div className=" space-y-6">
         <div className="border-t border-[var(--primary-color)]">
           {/* card1 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--primary-color)]">
-            <div className=" col-span-full md:col-span-3">
-              <h3 className="font-medium text-4xl md:pr-10 font-montserrat leading-none">Geo Thermal complex</h3>
-            </div>
 
-            <div className="order-3 md:order-2 col-span-full md:col-span-2">
-              <ul className="text-lg  font-medium flex flex-row md:flex-col flex-wrap space-x-3 md:space-x-0">
-                <li>Redesign concelit</li>
-                <li>Ui/ux</li>
-              </ul>
-            </div>
-
-            <div className="order-2 md:order-3 col-span-full md:col-span-4 flex flex-row items-start justify-center md:ml-24">
-              <Image className="w-full md:max-h-[26rem] object-cover " src={'/project/1.png'} width={1000} height={1000} alt="project" />
-            </div>
-          </div>
-
-          {/* card 2 */}
-          <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--primary-color)]">
-            <div className=" col-span-full md:col-span-3">
-              <h3 className="font-medium text-4xl md:pr-10 font-montserrat leading-none">Geo Thermal complex</h3>
-            </div>
-
-            <div className="order-3 md:order-2 col-span-full md:col-span-2">
-              <ul className="text-lg  font-medium flex flex-row md:flex-col flex-wrap space-x-3 md:space-x-0">
-                <li>Redesign concelit</li>
-                <li>Ui/ux</li>
-              </ul>
-            </div>
-
-            <div className="order-2 md:order-3 col-span-full md:col-span-4 flex flex-row items-start justify-center md:ml-24">
-              <Image className="w-full md:max-h-[26rem] object-cover " src={'/project/1.png'} width={1000} height={1000} alt="project" />
-            </div>
-          </div>
+          {DATA_PROJECT.map((data, idx) => (
+            <ProjectCard key={idx} data={data} />
+          ))}
         </div>
         <div className="w-full flex justify-center items-center ">
           <Button>See All Projects</Button>
