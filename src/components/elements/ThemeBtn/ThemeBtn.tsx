@@ -21,9 +21,9 @@ export default function ThemeBtn() {
   useEffect(() => {
     const enterAnimation = async () => {
       if (theTheme === 'light') {
-        await animate('.btnTheme', { right: 0, left: 'auto' }, { type: 'spring', duration: 1 });
-      } else {
         await animate('.btnTheme', { right: 0, left: 0 }, { type: 'spring', duration: 1 });
+      } else {
+        await animate('.btnTheme', { right: 0, left: 'auto' }, { type: 'spring', duration: 1 });
       }
     };
     enterAnimation();

@@ -7,7 +7,7 @@ export interface IProject {
 
 export const DATA_PROJECT: IProject[] = [
   {
-    title: 'Redesign concelit',
+    title: 'Geo thermal complex',
     img: '/project/1.png',
     desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi perferendis, ab et iste incidunt a quis exercitationem rerum deserunt sint debitis quia repellendus.',
     tag: ['Redesign concelit', 'Ui/ux'],

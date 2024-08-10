@@ -16,7 +16,7 @@ export default function Footer() {
   };
 
   return (
-    <section ref={ref} className="space-y-10 mt-28 md:mt-38">
+    <section ref={ref} className="space-y-10 !mt-28 md:!mt-38">
       <motion.div className="uppercase text-[4rem] md:text-[10rem] font-bold md:leading-[8rem]">
         <motion.h2 initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.3 } } : { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.4 } }}>
           Contact
@@ -50,7 +50,7 @@ export default function Footer() {
 
 export function FooterLink() {
   return (
-    <ul className="text-lg flex flex-row items-center justify-start space-x-8 md:space-x-20 text-[var(--primary-color)] font-medium py-8">
+    <ul className="text-lg flex flex-row items-center justify-start space-x-8 md:space-x-20 text-[var(--primary-color)] font-medium pb-3 pt-10">
       <li>Instagram//</li>
       <li>GitHub//</li>
       <li>Linkedin//</li>

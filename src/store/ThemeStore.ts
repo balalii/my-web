@@ -7,6 +7,7 @@ type ThemeStore = {
 
 // const themeNow = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
 export const useThemeStore = create<ThemeStore>((set) => ({
-  theTheme: null,
+  // theTheme: null, //default by system
+  theTheme: 'light', //manual
   setTheTheme: (theme: string | null) => set({ theTheme: theme }),
 }));

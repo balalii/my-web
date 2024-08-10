@@ -9,13 +9,15 @@ import Footer from '@/components/elements/Footer/Footer';
 export default function Home() {
   return (
     <Transition>
-      <div className="space-y-28 md:space-y-36 ">
+      <div>
         <Header />
-        <Profile />
-        <Capabilities />
-        <Project />
-        <Workflow />
-        <Footer />
+        <div className="space-y-20 md:space-y-32 !-mt-10 md:!-mt-16 ">
+          <Profile />
+          <Capabilities />
+          <Project />
+          <Workflow />
+          <Footer />
+        </div>
       </div>
     </Transition>
   );

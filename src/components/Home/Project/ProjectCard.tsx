@@ -3,9 +3,9 @@ import { IProject } from './DATA_PROJECT';
 
 export default function ProjectCard({ data }: { data: IProject }) {
   return (
-    <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-montserrat pt-4 pb-4 !border-b border-[var(--primary-color)]">
+    <div className="grid grid-cols-9 uppercase gap-y-5 md:gap-x-3 !font-sans pt-5 pb-5 !border-b border-[var(--primary-color)]">
       <div className=" col-span-full md:col-span-3">
-        <h3 className="font-medium text-4xl md:pr-10 font-montserrat leading-none">{data.title}</h3>
+        <h3 className="font-medium text-4xl md:pr-10 font-sans leading-none">{data.title}</h3>
       </div>
 
       <div className="order-3 md:order-2 col-span-full md:col-span-2">

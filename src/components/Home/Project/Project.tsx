@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import { DATA_PROJECT } from './DATA_PROJECT';
 import ProjectCard from './ProjectCard';
+import Link from 'next/link';
 
 export default function Project() {
   const ref = useRef(null);
@@ -31,7 +32,9 @@ export default function Project() {
           ))}
         </div>
         <div className="w-full flex justify-center items-center ">
-          <Button>See All Projects</Button>
+          <Link href={'/project'} className="!w-full md:!w-fit">
+            <Button className="!w-full md:!w-fit">See All Projects</Button>
+          </Link>
         </div>
       </div>
     </section>

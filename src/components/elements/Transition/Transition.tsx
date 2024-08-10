@@ -38,7 +38,7 @@ export default function Transition({ children }: { children: React.ReactNode }) 
             width: '100vw',
             zIndex: 1000,
             bottom: 0,
-            left: !isMobile ? 200 : 0, // Ensure the starting position is from the left
+            left: !isMobile ? 250 : 0, // Ensure the starting position is from the left
           }}
           transition={transitionSpringPhysics}
           animate={{ height: '0vh' }}
@@ -52,7 +52,7 @@ export default function Transition({ children }: { children: React.ReactNode }) 
             width: '100vw',
             zIndex: 1000,
             top: 0,
-            left: !isMobile ? 200 : 0, // Ensure the starting position is from the left
+            left: !isMobile ? 250 : 0, // Ensure the starting position is from the left
           }}
           transition={transitionSpringPhysics}
           initial={{ height: '100vh' }}
