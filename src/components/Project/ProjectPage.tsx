@@ -18,7 +18,7 @@ export default function ProjectPage() {
 
   return (
     <section className="space-y-5">
-      <div className="w-full h-[10rem] md:h-[25rem] bg-[url('/project/bgProject.jpg')] bg-cover rounded-[3rem] md:rounded-[6rem] object-cover shadow-[inset_0px_0px_5px_0px_rgba(0,0,0,47)] bg-[var(--primary-color)] md:!mt-6" />
+      <div className="w-full h-[13rem] md:h-[25rem] bg-[url('/project/bgProject.jpg')] bg-cover rounded-[3rem] md:rounded-[6rem] object-cover shadow-[inset_0px_0px_5px_0px_rgba(0,0,0,47)] bg-[var(--primary-color)] md:!mt-6" />
       <div className=" py-5 md:py-8 border-b border-[var(--primary-color)]">
         <motion.div ref={ref} className="uppercase text-[3rem] md:text-[5rem] font-bold md:leading-[8rem]">
           <motion.h2 className="leading-none" initial={{ opacity: 0, y: 200 }} animate={isInView ? { opacity: 1, y: 0, transition: { ease: [0, 0.71, 0.2, 1.01], delay: 0.3 } } : {}}>
@@ -27,7 +27,7 @@ export default function ProjectPage() {
         </motion.div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-9 md:gap-y-14 hover:cursor-pointer border-b border-[var(--primary-color)] pb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-6 md:gap-y-14 hover:cursor-pointer border-b border-[var(--primary-color)] pb-6">
         {DATA_PROJECT.map((data, idx) => (
           <div key={idx} className="space-y-4 group grid gap-y-5">
             <ul className="flex flex-row space-x-3 w-full flex-wrap order-3 md:order-1">
@@ -42,7 +42,7 @@ export default function ProjectPage() {
               width={1000}
               height={1000}
               alt={data.title}
-              className="grayscale group-hover:grayscale-0 w-full md:!mt-0 h-[20rem] md:h-[24rem] object-cover order-1 md:order-2 bg-gray-300/10 col-span-1 rounded-[5px] rounded-tr-[4rem] md:rounded-tr-[4.7rem] border border-[var(--primary-color)]"
+              className="grayscale group-hover:grayscale-0 w-full md:!mt-0 h-[19rem] md:h-[24rem] object-cover order-1 md:order-2 bg-gray-300/10 col-span-1 rounded-[5px] rounded-tr-[3rem] md:rounded-tr-[4.7rem] border border-[var(--primary-color)]"
             />
             <h2 className="font-medium order-2 md:order-3 text-3xl md:text-4xl md:pr-10 font-sans leading-none uppercase !mt-0">{data.title}</h2>
           </div>
