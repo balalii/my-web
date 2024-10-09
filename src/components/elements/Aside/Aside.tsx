@@ -26,7 +26,7 @@ export default function Aside() {
     <aside className=" hidden h-[95vh] text-[var(--primary-color)] lg:flex flex-col justify-between top-3 fixed items-start  w-fit">
       <span className="text-xl font-semibold">Iqbal Ali </span>
       <nav>
-        <ul className="space-y-3 -mt-20">
+        <ul className="space-y-5 -mt-20">
           {DATA_LINK.map((data, idx) => (
             <li key={idx} className={`${pathname === data.path && linkActive}`}>
               <Link href={data.path}>{data.name}</Link>

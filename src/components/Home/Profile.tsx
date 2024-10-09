@@ -9,7 +9,7 @@ export default function Profile() {
         Praesentium fugiat incidunt assumenda, asperiores rerum nesciunt dolorem sit amet dolore saepe, ex consectetur.
       </TextDescription>
       <div className="flex flex-col justify-between pt-4">
-        <div className="bg-[url(/project/mee.png)] rounded-xl h-[24rem] bg-top w-full md:w-[30rem] bg-transparent  bg-cover bg-no-repeat  grayscale hover:grayscale-0 transition-all cursor-pointer hover:bg-transparent" />
+        <div className="bg-[url(/project/mee.png)] rounded-xl h-[284px] md:h-[450px] bg-top w-full md:w-[30rem] bg-transparent  bg-cover bg-no-repeat  grayscale hover:grayscale-0 transition-all cursor-pointer hover:bg-transparent" />
         <p className="text-right right-0  mt-8 md:mt-0 text-[50px] md:text-[70px] uppercase tracking-wider font-roboto font-extrabold">
           <span className=" ">Iqbal</span> Ali
         </p>

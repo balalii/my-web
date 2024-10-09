@@ -5,13 +5,18 @@ import Image from 'next/image';
 import { useRef, useState } from 'react';
 import TextDescription from '../TextDescription';
 import Link from 'next/link';
+import { redirect, useRouter } from 'next/navigation';
 
 export default function Footer() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const [isClicked, setIsClicked] = useState(false);
+  const router = useRouter();
 
   const handleClick = () => {
+    setTimeout(() => {
+      router.push('/contact');
+    }, 600);
     setIsClicked(!isClicked);
   };
 
@@ -30,19 +35,17 @@ export default function Footer() {
 
       <div className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 md:space-x-10">
         <h4 className="uppercase text-[3rem] md:text-[4rem] font-extrabold md:leading-[8rem] font-sans tracking-tighter">Drop me an</h4>
-        <Link href={'/contact'}>
-          <motion.div
-            initial={{ paddingRight: '3.5rem' }}
-            animate={{ paddingRight: isClicked ? '0rem' : '3.5rem', paddingLeft: isClicked ? '3.5rem' : '0rem' }}
-            transition={{ duration: 0.3 }}
-            className="border-2 border-[var(--primary-color)] bg-[--primary-color] rounded-full cursor-pointer"
-            onClick={handleClick}
-          >
-            <div className="bg-[var(--background-color)] rounded-full p-8 pt-3 pb-5">
-              <span className="uppercase font-outline-2 text-[var(--background-color)] text-6xl font-extrabold font-sans">email</span>
-            </div>
-          </motion.div>
-        </Link>
+        <motion.div
+          initial={{ paddingRight: '3.5rem' }}
+          animate={{ paddingRight: isClicked ? '0rem' : '3.5rem', paddingLeft: isClicked ? '3.5rem' : '0rem' }}
+          transition={{ duration: 0.3 }}
+          className="border-2 border-[var(--primary-color)] bg-[--primary-color] rounded-full cursor-pointer"
+          onClick={handleClick}
+        >
+          <div className="bg-[var(--background-color)] rounded-full p-8 pt-3 pb-5">
+            <span className="uppercase font-outline-2 text-[var(--background-color)] text-6xl font-extrabold font-sans">email</span>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
